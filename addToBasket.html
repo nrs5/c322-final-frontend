@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="addToBasket.css">
+    <link rel="stylesheet" href="placeorder.css">
+    <title>Add to Basket</title>
+</head>
+<body>
+    <ul class="topnav">
+        <li><a class="logo" href="index.html"><img src="../assets/FinalProjectLogo.png" alt="Final Project"></a></li>
+        <li class="right"><a href="TrackOrder.html"><img src="../assets/cart.svg" alt="Cart"><span id="cart-count">0</span></a></li>
+        <li class="right"><a href="login.html"><img src="../assets/person.svg" alt="Account"></a></li>
+        <li class="right"><a href="login.html">Help</a></li>
+        <li class="right"><a href="TrackOrder.html">Track Order</a></li>
+      </ul>
+
+    <div class="container">
+        <div class="flower-details" id="flowerDetails"></div>
+
+        <div class="delivery">
+            <label for="deliveryDate">Delivery:</label>
+            <input type="date" id="delivery" required>
+        
+            <br>
+        
+            <label>Purchase:</label>
+        
+            <div class="purchase-options">
+                <label class="purchase-option">
+                    <input type="radio" name="purchaseOption" value="oneTimePurchase" checked>
+                    One Time Purchase ($<span id="oneTimePrice"></span>)
+                    <span class="checkmark"></span>
+                </label>
+                <br>
+                <label class="purchase-option">
+                    <input type="radio" name="purchaseOption" value="sub">
+                    Start a Subscription ($<span id="subPrice"></span>)
+                    <span class="checkmark"></span>
+                </label>
+            </div>
+        
+            <button onclick="addToBasket()" style="background-color: white; color: black; border: 2px solid black;">Add to Basket</button>
+        </div>
+    </div>
+
+    
+</body>
+
+<script src="addToBasket.js"></script> 
+<script src="configurations.js"></script>
+
+</html>

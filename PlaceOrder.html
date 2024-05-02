@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="placeorder.css">
+    <title>Place Your Order</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    
+    <ul class="topnav">
+        <li><a class="logo" href="index.html"><img src="../assets/FinalProjectLogo.png" alt="Final Project"></a></li>
+        <li class="right"><a href="TrackOrder.html"><img src="../assets/cart.svg" alt="Cart"><span id="cart-count">0</span></a></li>
+        <li class="right"><a href="login.html"><img src="../assets/person.svg" alt="Account"></a></li>
+        <li class="right"><a href="login.html">Help</a></li>
+        <li class="right"><a href="TrackOrder.html">Track Order</a></li>
+      </ul>
+
+    <div class="order-container">
+        <h1>Ready to Place Your Order?</h1>
+        <p>Review your order summary below and click "Order Now" to proceed with your purchase.</p>
+
+        <div class="order-summary" id="summary">
+        </div>
+
+        <button class="order-button" onclick="order()">Order Now</button>
+    </div>
+
+    <script src="configurations.js"></script>
+    <script src="PlaceOrder.js"></script>
+</body>
+</html>
