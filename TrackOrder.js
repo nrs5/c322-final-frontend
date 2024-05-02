@@ -1,5 +1,5 @@
 
-    let host = "localhost:8080";
+    let host = "https://finalproject-latest-cnp7.onrender.com";
     let orders = [];
     displayOrders();
 

@@ -1,4 +1,4 @@
-const serverHost = "http://localhost:8080";
+const serverHost = "https://finalproject-latest-cnp7.onrender.com";
 window.onload = function() {
     displayFlowerInfo();
     displayDeliveryDetails();

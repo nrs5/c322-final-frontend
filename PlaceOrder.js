@@ -1,5 +1,5 @@
 
-    const host = "http://localhost:8080";
+    const host = "https://finalproject-latest-cnp7.onrender.com";
 
     let cartItem = JSON.parse(localStorage.getItem("cartItem")) || {};
     let info = JSON.parse(localStorage.getItem("info")) || {};

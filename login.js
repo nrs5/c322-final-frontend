@@ -1,4 +1,4 @@
-const host = "http://localhost:8080";
+const host = "https://finalproject-latest-cnp7.onrender.com";
 
 async function login() {    
     let username = document.getElementById("username").value;
